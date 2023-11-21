@@ -1,5 +1,4 @@
 import pandas as pd
-
 def department_highest_salary(employee: pd.DataFrame, department: pd.DataFrame) -> pd.DataFrame:
     m=pd.merge(employee,department,left_on="departmentId",right_on="id",left_index=False)
     df=pd.DataFrame({"name_y":[],"name_x":[],"salary":[]})
